@@ -1,7 +1,7 @@
 ---
-title: Embedding Youtube Videos
-date: "2015-05-01T22:12:03.284Z"
-description: "Embedding Youtube Videos"
+title: Embed Youtube Videos
+date: "2019-09-18T22:12:03.284Z"
+description: "Embed Youtube Videos"
 ---
 
 A Youtube video is embedded.
