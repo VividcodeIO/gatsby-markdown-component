@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `React Components in Markdown`,
-    author: `Fu Cheng`,
+    author: `VividCode`,
     description: `Embed React component in Markdown`,
     siteUrl: `https://gatsby-markdown-component.netlify.com/`,
   },

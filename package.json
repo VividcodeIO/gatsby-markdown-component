@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "gatsby-markdown-component",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "React components in Markdown",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "VividCode <hello@vividcode.io>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/VividcodeIO/gatsby-markdown-component/issues"
   },
   "dependencies": {
     "gatsby": "^2.15.16",
@@ -41,7 +41,7 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/VividcodeIO/gatsby-markdown-component#readme",
   "keywords": [
     "gatsby"
   ],
@@ -49,7 +49,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/VividcodeIO/gatsby-markdown-component.git"
   },
   "scripts": {
     "build": "gatsby build",
