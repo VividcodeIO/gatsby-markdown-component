@@ -3,7 +3,7 @@ module.exports = {
     title: `React Components in Markdown`,
     author: `Fu Cheng`,
     description: `Embed React component in Markdown`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://gatsby-markdown-component.netlify.com/`,
   },
   plugins: [
     {
@@ -55,7 +55,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Gatsby React Components in Markdown`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
