@@ -1,16 +1,24 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import rehypeReact from "rehype-react"
+import ReactPlayer from "react-player"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
+    const renderAst = new rehypeReact({
+      createElement: React.createElement,
+      components: { 
+        "video-player": ReactPlayer,
+      }
+    }).Compiler
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -38,15 +46,12 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date}
             </p>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section>{renderAst(post.htmlAst)}</section>
           <hr
             style={{
               marginBottom: rhythm(1),
             }}
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
         <nav>
@@ -93,7 +98,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
